@@ -1,0 +1,23 @@
+<h1>let's create a celebrity</h1>
+<div id="form">
+  <h2>create a new celebrity</h2>
+  <form action="/celebrities/create" method="POST">
+   <label> Name
+      <input type="text" name="name" placeholder="...." />
+    </label>
+ 
+    <label> occupation
+      <input type="text" name="occupation" placeholder="...." />
+    </label>
+ 
+    <label> catchPhrase
+      <input type="text" name="catchPhrase" placeholder="...." />
+    </label>
+ 
+    <button type="submit">Create Celebrity</button>
+ 
+    {{#if errorMessage}}
+        <p style="color:red;">{{errorMessage}}</p>
+    {{/if}}
+  </form>
+</div>
